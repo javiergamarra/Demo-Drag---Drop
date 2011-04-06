@@ -1,0 +1,497 @@
+body {
+	background-color: #0B5FA5;
+}
+
+li {
+	list-style: none;
+}
+
+li a {
+	text-decoration: none;
+	color: #000;
+	margin: 10px;
+	width: 150px;
+	border: 3px dashed #999;
+	-moz-border-radius: 10px 0px 20px 30px;
+	-webkit-border-radius: 10px 0px 20px 30px;
+	padding: 10px;
+	display: block;
+	padding: 10px;
+	background: #eee;
+}
+
+li a:hover {
+	-moz-border-radius: 10px 0px 20px;
+	-webkit-border-radius: 10px 0px 20px;
+}
+
+#container {
+	background: none repeat scroll 0 0 #0B5FA5;
+	margin: 0px auto 0;
+	width: 800px;
+}
+
+#pagina {
+	width: 100%;
+	height: auto;
+}
+
+#cabecera {
+	-moz-border-radius: 20px 20px 20px 20px;
+	-webkit-border-radius: 20px 20px 20px 20px;
+	width: 800px;
+}
+
+*[draggable=true] {
+	-moz-user-select: none;
+	-khtml-user-drag: element;
+	cursor: move;
+}
+
+*:-khtml-drag {
+	background-color: rgba(238, 238, 238, 0.5);
+}
+
+li a:hover:after {
+	content: ' (arrastrame) ';
+	vertical-align: top;
+	top: -32px;
+	position: relative;
+	color: red;
+	left: -13px;
+	font-size: 1.1em;
+	z-index: 15;
+}
+
+li.over {
+	border-color: #333;
+	background: #ccc;
+}
+
+#planta {
+	background: url("../images/transiciones/0_000.png") no-repeat scroll
+		center center transparent;
+	content: ".";
+	float: left;
+	border: 2px solid transparent;
+	height: 250px;
+	margin-left: 35px;
+	margin-top: 150px;
+	width: 200px;
+}
+
+.planta00 {
+	background: url(../images/transiciones/0_000.png) center no-repeat
+		!important;
+}
+
+.planta025 {
+	background: url(../images/transiciones/0_025.png) center no-repeat
+		!important;
+}
+
+.planta050 {
+	background: url(../images/transiciones/0_050.png) center no-repeat
+		!important;
+}
+
+.planta075 {
+	background: url(../images/transiciones/0_075.png) center no-repeat
+		!important;
+}
+
+.planta10 {
+	background: url(../images/transiciones/1_000.png) center no-repeat
+		!important;
+}
+
+.planta125 {
+	background: url(../images/transiciones/1_025.png) center no-repeat
+		!important;
+}
+
+.planta150 {
+	background: url(../images/transiciones/1_050.png) center no-repeat
+		!important;
+}
+
+.planta175 {
+	background: url(../images/transiciones/1_075.png) center no-repeat
+		!important;
+}
+
+.planta20 {
+	background: url(../images/transiciones/2_000.png) center no-repeat
+		!important;
+}
+
+.planta225 {
+	background: url(../images/transiciones/2_025.png) center no-repeat
+		!important;
+}
+
+.planta250 {
+	background: url(../images/transiciones/2_050.png) center no-repeat
+		!important;
+}
+
+.planta275 {
+	background: url(../images/transiciones/2_075.png) center no-repeat
+		!important;
+}
+
+.planta30 {
+	background: url(../images/transiciones/3_000.png) center no-repeat
+		!important;
+}
+
+.planta325 {
+	background: url(../images/transiciones/3_025.png) center no-repeat
+		!important;
+}
+
+.planta350 {
+	background: url(../images/transiciones/3_050.png) center no-repeat
+		!important;
+}
+
+.planta375 {
+	background: url(../images/transiciones/3_075.png) center no-repeat
+		!important;
+}
+
+.planta40 {
+	background: url(../images/transiciones/4_000.png) center no-repeat
+		!important;
+}
+
+#planta.over {
+	background: url(../images/icon_water.png) no-repeat scroll 0 0
+		transparent;
+}
+
+#fondo {
+	-moz-border-radius: 20px 20px 20px 20px;
+	-webkit-border-radius: 20px 20px 20px 20px;
+	float: left;
+	height: 396px;
+	width: 600px;
+}
+
+.fondoSol {
+	background: url("../images/landscape_sol.jpg") no-repeat scroll 0 0
+		transparent;
+}
+
+.fondoNevado {
+	background: url("../images/landscape_Nevado.jpg") no-repeat scroll 0 0
+		transparent;
+}
+
+.fondoNublado {
+	background: url("../images/landscape_nublado.jpg") no-repeat scroll 0 0
+		transparent;
+}
+
+.fondoLluvia {
+	background: url("../images/landscape_lluvia.jpg") no-repeat scroll 0 0
+		transparent;
+}
+
+.fondoNoche {
+	background: url("../images/landscape_Noche.jpg") no-repeat scroll 0 0
+		transparent;
+}
+
+.fondoInterior {
+	background: url("../images/landscape_Interior.jpg") no-repeat scroll 0 0
+		transparent;
+}
+
+.fondoInteriorMaceta {
+	background: url("../images/landscape_InteriorMaceta.jpg") no-repeat
+		scroll 0 0 transparent;
+}
+
+#pala {
+	background: url("../images/pala.png") no-repeat scroll center center
+		transparent;
+	content: ".";
+	height: 95px;
+	width: 60px;
+	float: left;
+	text-align: left;
+}
+
+#Tierra {
+	background: url("../images/tierra.png") no-repeat scroll center center
+		transparent;
+	content: ".";
+	width: 60px;
+	height: 30px;
+	position: relative;
+	left: 105px;
+}
+
+#Abono {
+	background: url("../images/abono.png") no-repeat scroll center center
+		transparent;
+	content: ".";
+	height: 50px;
+	width: 60px;
+	position: relative;
+	top: 160px;
+}
+
+#maceta {
+	background: url("../images/pot.png") no-repeat scroll center center
+		transparent;
+	content: ".";
+	top: -90px;
+	position: relative;
+	height: 50px;
+	width: 60px;
+	height: 50px;
+}
+
+#Regadera {
+	background: url("../images/regadera.png") no-repeat scroll center center
+		transparent;
+	content: ".";
+	height: 50px;
+	width: 60px;
+	position: relative;
+	left: 105px;
+}
+
+.vacia {
+	background: url("../images/regadera_vacia.png") no-repeat scroll center
+		center transparent !important;
+}
+
+#Semilla {
+	background: url("../images/semilla.png") no-repeat scroll center center
+		transparent;
+	content: ".";
+	height: 50px;
+	width: 60px;
+}
+
+#grifo {
+	background: url("../images/grifo.png") no-repeat scroll center center
+		transparent;
+	width: 150px;
+	border: 2px solid transparent;
+	height: 60px;
+	margin: 0 auto;
+}
+
+#izquierda {
+	margin-left: 340px;
+	padding-top: 60px;
+	min-height: 300px;
+}
+
+#izquierda li {
+	float: left;
+}
+
+#panelLateral {
+	float: left;
+	margin-left: 10px;
+}
+
+#barras {
+	-moz-border-radius: 20px 20px 20px 20px;
+	-webkit-border-radius: 20px 20px 20px 20px;
+	background-color: white;
+	border: 2px solid orange;
+	min-height: 393px;
+	opacity: 0.8;
+	width: 186px;
+}
+
+.barras {
+	background: url("../images/BarrasSlider.png") no-repeat scroll
+		transparent;
+	content: ".";
+	min-height: 32px;
+	padding-top: 30px;
+	height: 30px;
+	width: 200px;
+	min-height: 32px;
+	left: -12px;
+	position: relative;
+}
+
+.elementos {
+	background: url("../images/slider.png") center no-repeat transparent;
+	content: ".";
+	position: relative;
+	height: 30px;
+	margin-top: -20px;
+	width: 200px;
+}
+
+#juego {
+	width: 800px;
+	height: 450px;
+}
+
+.texto {
+	color: #FF4C00;
+	text-align: center;
+	width: 180px;
+	font-size: 0.9em;
+}
+
+.textoInfo {
+	color: #FF4C00;
+	font-size: 1.0em;
+	cursor: pointer;
+}
+
+
+
+#ventanaClima {
+	opacity: 0.75;
+	background-color: #ffffff;
+	z-index: 100;
+}
+
+#base {
+	opacity: 0.80;
+	background-color: #333333;
+	z-index: 50;
+}
+
+.capaInfo {
+	opacity: 1.0;
+	background-color: white;
+	z-index: 50 ;
+	height: 200px ;
+	width: 300px ;
+	position:absolute;
+	top: 50px;
+	left: 100px;
+	padding: 10px;
+}
+
+.capaGuia {
+	opacity: 1.0;
+	background-color: #ffffff;
+	z-index: 100;
+	left:0px;
+	position:relative;
+	top:20px;
+	text-align:center;
+	left:40px;
+	height:630px;
+	width:800px;
+	margin: 0 auto;
+}
+
+.imgGuia {
+	color: black;
+	font-size: 1.0em;
+	cursor: pointer;
+	height:450px;
+}
+
+.textoGuia {
+	color: black;
+	font-size: 1.0em;
+	cursor: pointer;
+	float:right;
+}
+
+.textoGuiaSalir {
+	color: black;
+	font-size: 1.0em;
+	cursor: pointer;
+	float: left;
+}
+
+#climas {
+	vertical-align: top;
+	position: relative;
+	text-align: center;
+}
+
+.capaIconosClima {
+	float: left;
+	margin: 20px;
+	width: 225px;
+}
+
+#imagenSol,#imagenLLuvia,#imagenNublado,#imagenNevado,#imagenNoche,#imagenInterior
+	{
+	cursor: pointer;
+}
+
+.textoCapaClima {
+	color: orange;
+	font-size: 1.3em;
+	cursor: pointer;
+}
+
+.centrado {
+	text-align: center;
+}
+
+#cerrar {
+	text-align: right;
+}
+
+#deshacer {
+	color: #CD0074;
+	border: 1px dotted;
+	cursor: pointer;
+}
+
+.visible {
+	visibility: visible;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.highlight {
+	-moz-border-radius: 20px 20px 20px 20px;
+	-webkit-border-radius: 20px 20px 20px 20px;
+	border: 2px dashed red !important;
+}
+
+#mensajes {
+	background: url("../images/consola mensajes.png") no-repeat scroll 0 0
+		transparent;
+	color: green;
+	height: 150px;
+	margin-top: 10px;
+	padding-left: 25px;
+	padding-top: 2px;
+	width: 800px;
+}
+
+#mensaje {
+	opacity: 1;
+	font-size: 2em;
+}
+
+.info {
+	color: green;
+}
+
+.error {
+	color: red;
+}
+
+.avance {
+	color: blue;
+}
+
+#tituloPanel {
+	font-size: 1.0em;
+}
+;

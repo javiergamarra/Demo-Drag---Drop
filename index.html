@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+        Remove this if you use the .htaccess -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>Juego del ciclo de vida de las plantas</title>
+        <meta name="description" content="Juego del ciclo de vida de las plantas">
+        <meta name="author" content="Grupo Bruselas - IPC - Curso Puente - UVA">
+
+        <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+        <link rel="stylesheet" href="css/juego.css">
+    </head>
+    <body>
+        <div id="pagina">
+
+            <div id="container">
+                <header>
+                    <div id="cabecera">
+                        <img src="./images/cabecera1.png" alt="P&acute;gina juego ciclo de vida de las plantas" title="P&acute;gina juego ciclo de vida de las plantas">
+                    </div>
+                </header>
+                <div id="mensajes">
+                    <p>
+                        CONSOLA DE INFORMACI&Oacute;N
+                    </p>
+                    <div id="textoMensajes">
+                        <span id="mensaje"></span><span id="deshacer" style="display:none;" onclick="deshacer();"></span>
+                    </div>
+                </div>
+                <div id="juego">
+
+                    <div id="fondo" class="fondoSol">
+                        <div id="planta">
+                        </div>
+                        <ul id="izquierda">
+                            <li >
+                                <a id="pala" class="exterior posterior" href="#"></a>
+                            </li>
+                            <li>
+                                <a id="semilla" class="posterior" href="#"></a>
+                            </li>
+                            
+                            <li>
+                                <a id="regadera" class="vacia opcional" href="#"></a>
+                            </li>
+                            <li>
+                                <a id="abono" class="interior noopcional" href="#"></a>
+                            </li>
+                            
+                            <li>
+                                <a id="tierra" class="interior noopcional" href="#"></a>
+                            </li>
+                             <li>
+                                <a id="maceta" class="interior posterior" href="#"></a>
+                            </li>
+                             
+                        </ul>
+                    </div>
+                    <div id="panelLateral">
+                        <div id="barras">
+                            <div class="texto">
+                                Modifica el Clima
+                            </div>
+                            <div class="texto centrado">
+                                <img src="./images/weather_icon.png" alt="Modifica el clima" title="Modifica el clima" onclick="generarPanel()">
+                            </div>
+                            <div class="texto opcional">
+                                Agua
+                            </div>
+                            <div class="barras opcional">
+                                <div class="elementos" id="elementoAgua"></div>
+                            </div>
+                             <div class="texto opcional">
+                                Tierra
+                            </div>
+                            <div class="barras opcional">
+                                <div class="elementos" id="elementoTierra"></div>
+                            </div>
+                            <div class="texto opcional">
+                                Abono
+                            </div>
+                            <div class="barras opcional">
+                                <div class="elementos" id="elementoAbono"></div>
+                            </div>
+                            <div class="texto opcional">
+                                Agua para regar
+                            </div>
+                            <div class="texto opcional">
+                                <div id="grifo">
+                                    &nbsp;
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="snowstorm.js"></script>
+          <script type="text/javascript" language="JavaScript" src="js/guia.js">
+        </script>
+        <script type="text/javascript" language="JavaScript" src="js/h5utils.js">
+        </script>
+        <script type="text/javascript" language="JavaScript" src="js/planta.js">
+        </script>
+        <script type="text/javascript" language="JavaScript" src="js/juego.js">
+        </script>
+         <script type="text/javascript" language="JavaScript" src="js/info.js">
+        </script>
+        
+        
+    </body>
+</html>
